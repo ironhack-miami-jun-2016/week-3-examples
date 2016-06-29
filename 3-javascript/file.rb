@@ -27,3 +27,11 @@ p count_colors("chartreuse", colors_array) == 2
 p count_colors("black", colors_array) == 1
 
 p count_colors("pink", colors_array) == 0
+
+
+
+upper_case_colors = colors_array.map do |color_from_array|
+  color_from_array.upcase
+end
+
+p upper_case_colors

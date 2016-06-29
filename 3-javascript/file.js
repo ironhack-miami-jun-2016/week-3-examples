@@ -33,13 +33,8 @@ console.log( countColors("black", colorsArray) === 1 );
 console.log( countColors("pink", colorsArray) === 0 );
 
 
-function eat () {
-  console.log("Eating pizza.")
-}
+var upperCaseColors = colorsArray.map(function (colorFromArray) {
+  return colorFromArray.toUpperCase();
+});
 
-eat();
-
-console.log( eat );
-
-
-
+console.log(upperCaseColors);
