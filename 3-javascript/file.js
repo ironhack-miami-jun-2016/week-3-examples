@@ -5,16 +5,13 @@ var colorsArray = [ "indigo", "black", "purple", "indigo", "chartreuse", "indigo
 
 
 function countColors (color, theArray) {
-  var counter;
   var colorOccurances = 0;
 
-  for (counter = 0; counter < theArray.length; counter++) {
-    var colorFromArray = theArray[counter];
-
+  theArray.forEach(function (colorFromArray) {
     if (colorFromArray === color) {
       colorOccurances += 1;
     }
-  }
+  });
 
   return colorOccurances;
 }
@@ -34,3 +31,15 @@ console.log( countColors("black", colorsArray) === 1 );
 
 // p countColors("pink", colors_array) == 0
 console.log( countColors("pink", colorsArray) === 0 );
+
+
+function eat () {
+  console.log("Eating pizza.")
+}
+
+eat();
+
+console.log( eat );
+
+
+
