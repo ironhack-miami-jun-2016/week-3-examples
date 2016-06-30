@@ -1,20 +1,17 @@
-// file.js
+// app.js
+
+//             Don't forget the ./
+//                         |
+//                         v
+var countColors = require("./lib/count-colors.js");
+//      ^
+//      |
+// Assign the return value of require to a variable
+
 
 //                      0        1         2         3          4
 var colorsArray = [ "indigo", "black", "purple", "indigo", "chartreuse", "indigo", "indigo", "magenta", "chartreuse", "scarlet" ];
 
-
-function countColors (color, theArray) {
-  var colorOccurances = 0;
-
-  theArray.forEach(function (colorFromArray) {
-    if (colorFromArray === color) {
-      colorOccurances += 1;
-    }
-  });
-
-  return colorOccurances;
-}
 
 
 console.log("Testing countColors function");
