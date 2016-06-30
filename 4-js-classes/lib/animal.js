@@ -1,4 +1,4 @@
-// lib/animal.js
+"use strict";
 
 class Animal {
   constructor (name, noise) {
