@@ -1,15 +1,19 @@
-function Animal (name, noise) {
-  this.name = name;
-  this.noise = noise;
+"use strict";
+
+class Animal {
+  constructor (name, noise) {
+    this.name = name;
+    this.noise = noise;
+  }
+
+  shout () {
+    console.log("Mooooo!");
+  }
+
+  makeNoise () {
+    console.log(this.noise + "!!!!");
+  }
 }
-
-Animal.prototype.shout = function () {
-  console.log("Mooooo!");
-};
-
-Animal.prototype.makeNoise = function () {
-  console.log(this.noise + "!!!!");
-};
 
 
 var shadow = new Animal("Shadow", "Ruff");
