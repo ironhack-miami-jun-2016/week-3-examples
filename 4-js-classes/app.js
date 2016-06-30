@@ -1,20 +1,6 @@
 "use strict";
 
-class Animal {
-  constructor (name, noise) {
-    this.name = name;
-    this.noise = noise;
-  }
-
-  shout () {
-    console.log("Mooooo!");
-  }
-
-  makeNoise () {
-    console.log(this.noise + "!!!!");
-  }
-}
-
+var Animal = require("./lib/animal.js");
 
 var shadow = new Animal("Shadow", "Ruff");
 
