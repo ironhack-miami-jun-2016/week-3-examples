@@ -1,35 +1,26 @@
-var shadow = {
-  name: "Shadow",
-  noise: "Ruff",
+function Animal (name, noise) {
+  this.name = name;
+  this.noise = noise;
+}
 
-  shout: function () {
-    console.log("Mooooo!");
-  },
+Animal.prototype.shout = function () {
+  console.log("Mooooo!");
+};
 
-  makeNoise: function () {
-    console.log(this.noise + "!!!!");
-  }
+Animal.prototype.makeNoise = function () {
+  console.log(this.noise + "!!!!");
 };
 
 
+var shadow = new Animal("Shadow", "Ruff");
+
+console.log( shadow.name );
 shadow.shout();
 shadow.makeNoise();
 
 
-var princess = {
-  name: "Princess",
-  noise: "Meow",
+var princess = new Animal("Princess", "Meow");
 
-  shout: function () {
-    console.log("MEOW!");
-  },
-
-  makeNoise: function () {
-    console.log(this.noise + "!!!!");
-  }
-};
-
-
+console.log( princess.name );
 princess.shout();
 princess.makeNoise();
-
